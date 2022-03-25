@@ -14,10 +14,12 @@ p:number=1;
   ngOnInit(): void {
   }
   menuItems:any=[
-  {"id":1,"Title":"Don Bacon","Price":"$24.1","image":"../../assets/paneer.jpg"  },
-  {"id":2,"Title":"Carne","Price":"$26.3","image":"../../assets/pepperoni-pizza.jpg"  },
-  {"id":3,"Title":"Cipollo","Price":"$10","image":"../../assets/pepperoni-pizza.jpg"  }
-
+  {"id":1,"Title":"Don Bacon","Price":"$25.1","image":"../../assets/paneer.jpg"  },
+  {"id":2,"Title":"Carne","Price":"$26.3","image":"../../assets/Slide3.jpg"  },
+  {"id":3,"Title":"Cipollo","Price":"$10.5","image":"../../assets/pepperoni-pizza.jpg"  },
+  {"id":1,"Title":"Chesse Pizza","Price":"$50.1","image":"../../assets/Slide1.jpg"  },
+  {"id":2,"Title":"Macnold Pizza","Price":"$40.3","image":"../../assets/Slide2.jpg"  },
+  {"id":3,"Title":"Cipollo","Price":"$15.8","image":"../../assets/Slide3.jpg"  }
 ]
 AddToCart(id:any)
 {

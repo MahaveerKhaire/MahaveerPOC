@@ -1,8 +1,15 @@
-<p>order-now works!</p>
 
+<div class="container">
+  <br>
+
+   <div class="row" area-text="center">
+   <h1 text="center"> Order Now</h1>
+
+   <hr class="solid">
+  </div>
 <div class="row">
   
-        <div  class="col-md-4" *ngFor="let p of menuItems | paginate:{itemsPerPage:2,currentPage:p}">
+        <div  class="col-md-4" *ngFor="let p of menuItems | paginate:{itemsPerPage:3,currentPage:p}">
             <!--<img src="{{p.image}}" style='height: 100%; width: 100%; object-fit: contain' />-->
             <!-- {{p.Title}}
             {{p.Price}} -->
@@ -18,4 +25,5 @@
       </div>
     </div>
     <pagination-controls (pageChange)="p=$event"></pagination-controls>
+</div>
 </div>
