@@ -1,0 +1,32 @@
+
+
+<div class="container">
+    <br>
+  <div  class="row" area-text="centre">
+     <h3> Shopping Cart</h3>
+     <hr class="solid">
+  </div>
+  <br>
+
+    <div class="row"  >
+        <table style="width:50%" >
+            <tr>
+              <th style="width:20%">Product Name</th>
+              <th style="width:10%">Price</th>
+              <th style="width:5%">Quantity</th>
+              <th style="width:10%">Image</th>
+              <th style="width:5%"></th>
+              
+            </tr>
+            <tr *ngFor="let p of menuItems" >
+                <td>{{p.Title}}</td>
+                <td>{{p.Price}}</td>
+                <td>{{p.id}}</td>
+                <td><img src="{{p.image}}" class="card-img-top" height="50" width="50"></td>
+                <td><button me="Delete" id="btnDelete" (click)="DeletefromCart(p.id)"> Delete</button></td>
+            </tr>
+          </table>
+    </div>
+</div>
+
+<br>

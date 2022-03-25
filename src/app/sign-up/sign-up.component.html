@@ -1,0 +1,42 @@
+<br>
+<br>
+
+<div class=" container text-center">
+<form [formGroup]="MyForm"  (ngSubmit)="RegisterUser()">
+    <table>
+        <tr>
+            <td> <label>Username</label>
+                </td>
+            <td><input type="text" name="username" formControlName="username" required/></td>
+        </tr>
+        <tr>
+            <td><label>Full Name</label>
+                </td>
+            <td><input type="text" name="fullname" formControlName="fullname" required/></td>
+        </tr>
+        <tr>
+            <td> <label>Address</label>
+               </td>
+            <td> <input type="text" name="address" formControlName="address" required/></td>
+        </tr>
+        <tr>
+            <td><label>Contact Number</label>
+                </td>
+            <td><input type="text" name="contactnumber" formControlName="contactnumber" required/></td>
+        </tr>
+        <tr>
+            <td><label>Password</label></td>
+            <td><input type="password" name="Password" formControlName="Password" required/></td>
+        </tr>
+      <tr> <button type="Submit" class="btn btn-success">Signup</button></tr>
+    </table>
+   
+    
+   
+   
+</form>
+
+<br>
+
+<a routerLink="/login">Alreday Member ? Click to login!</a>
+</div>
